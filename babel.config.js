@@ -1,6 +1,7 @@
 module.exports = {
   presets: [
     '@vue/app',
+    "es2015",
     [
       "env",
       {
@@ -8,5 +9,10 @@ module.exports = {
       }
     ],
     "vue"
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["require-context-hook"]
+    }
+  }
 }
